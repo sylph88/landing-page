@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero, header, footer
+{
+  background-color: #1F2937;
+  color: #E5E7EB;
+}
+
+/*--Header--*/
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+.nav-container > img {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+/*--Hero Section--*/
+.hero-text {
+  font-size: 4rem;
+  font-weight: bold;
+}
+button {
+  cursor: pointer;
+}
