@@ -1,19 +1,26 @@
-html {
-  box-sizing: border-box;
-  font-size: 12px;
-}
-
+:root,
 body {
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  font: 12px 'Roboto', sans-serif;
+  margin: 0;
 }
 
-.hero, header, footer
+.hero, header, footer, button
 {
   background-color: #1F2937;
   color: #E5E7EB;
 }
 
+.secondary-text {
+  font-size: 1.5rem;
+}
+
 /*--Header--*/
+.header-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -32,10 +39,79 @@ ul {
 
 
 /*--Hero Section--*/
-.hero-text {
+.hero {
+  display: flex;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+  gap: 5%;
+}
+
+h1 {
   font-size: 4rem;
   font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+.hero-img-container > img {
+  width: 420px;
+}
+
 button {
   cursor: pointer;
+  border-radius: 5px;
+  border-style: none;
+  outline: none;
+  padding: 5px 15px 5px 15px;
+  background-color: #3882F6;
 }
+
+button:hover {
+  filter: brightness(85%);
+}
+
+/*--Information Section--*/
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.information img {
+  width: 168px;
+  height: 168px;
+  border: 5px solid #3882F6;
+  border-radius: 16px;
+}
+
+.information p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*--Testimonial Section--*/
+
+.testimonial {
+  background-color: #E5E7EB;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial > blockquote {
+  width: 70%;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: -2px;
+}
+
